@@ -1,19 +1,42 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Saisharan Bingewar | QA · AI · Frontend Enthusiast</title>
+    <title>Saisharan Bingewar | QA · AI · Frontend</title>
     <meta name="description" content="Creative QA Engineer with a passion for automation, AI integration, and front-end experiences." />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous" />
+    <style>
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s ease forwards;
+      }
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .experience-block {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 24px;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0, 255, 213, 0.1);
+        transition: transform 0.3s ease;
+      }
+      .experience-block:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 24px rgba(0, 255, 213, 0.2);
+      }
+    </style>
   </head>
   <body>
     <header id="hero">
       <nav class="navbar">
         <div class="container">
-          <h1 id="logo"><a href="#"><img src="./assets/logo.png" alt="Saisharan Logo" /></a></h1>
+          <h1 id="logo"><a href="#"><img src="./assets/logo.png" alt="Logo" /></a></h1>
           <ul class="nav-menu">
             <li><a class="nav-link" href="#projects">PROJECTS</a></li>
             <li><a class="nav-link" href="#experience">EXPERIENCE</a></li>
@@ -24,7 +47,7 @@
         </div>
       </nav>
       <section class="header-container">
-        <img class="profile-image" src="assets/profile-image.svg" alt="Saisharan" />
+        <img class="profile-image" src="assets/profile-image.svg.png" alt="Saisharan" />
         <h1>Hello, I'm Saisharan Bingewar</h1>
         <div class="content-text">
           <h2>QA Engineer · AI Explorer · UI Enthusiast</h2>
@@ -35,22 +58,20 @@
     </header>
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="container section">
-      <h2>Professional Journey</h2>
-      <div class="card">
-        <h3>QA Engineer @ Tata Consultancy Services (Client: Citibank)</h3>
-        <p><em>2019 – 2022</em></p>
-        <ul>
-          <li>Built scalable automation frameworks using Selenium, TestNG, and Java</li>
-          <li>Performed API testing using Postman & REST-assured for key services</li>
-          <li>Integrated CI/CD pipelines using Jenkins and GitHub Actions</li>
-          <li>Led UAT coordination and functional validations across modules</li>
-        </ul>
+    <section id="experience" class="container section fade-in">
+      <h2>Experience</h2>
+      <div class="experience-block">
+        <h3>Citibank (via Tata Consultancy Services)</h3>
+        <p><em>Sept 2019 – Aug 2022</em></p>
+        <p>
+          As a QA Engineer embedded with Citibank's technology team, I was responsible for ensuring stability across core financial systems. I designed and developed an end-to-end automation framework using Selenium, TestNG, and Cucumber. My API testing expertise led me to create validations for over 100+ REST APIs using Postman and REST-assured.<br><br>
+          Every release I worked on was tightly integrated with CI/CD pipelines like Jenkins and GitHub Actions. I collaborated directly with developers and UAT teams, closing feedback loops faster and enhancing deployment quality. This role not only strengthened my technical base but also grew my love for reliable, smart automation and creative problem solving.
+        </p>
       </div>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="container section">
+    <section id="skills" class="container section fade-in">
       <h2>Tech Stack & Passions</h2>
       <div class="skills-grid">
         <div class="card">
@@ -73,21 +94,21 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="project-container container">
+    <section id="projects" class="project-container container fade-in">
       <div class="division"></div>
       <div class="content-text">
-        <h2>Real Work, Real Code</h2>
-        <p>These are real projects reflecting my experience—not stock templates.</p>
+        <h2>Projects</h2>
+        <p>These projects reflect my hands-on skills in automation and intelligent testing workflows.</p>
       </div>
       <article class="project">
         <div class="card">
           <div class="project-info">
             <div class="project-bio">
-              <h3>Loanet Trade Test Automation</h3>
+              <h3>Loanet Automation Framework</h3>
               <p>Selenium, Cucumber, SQL</p>
             </div>
             <div class="project-link">
-              <a href="https://github.com/sharanbingewar/loanet-automation" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/S-Rajasekhar-Reddy/Homeo_Quizz" target="_blank"><i class="fab fa-github"></i></a>
               <a href="#"><i class="fas fa-globe"></i></a>
             </div>
           </div>
@@ -96,7 +117,7 @@
         <div class="card">
           <div class="project-info">
             <div class="project-bio">
-              <h3>API Coverage Framework</h3>
+              <h3>API Coverage Suite</h3>
               <p>Postman, REST-assured, CI/CD</p>
             </div>
             <div class="project-link">
@@ -109,9 +130,9 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section container">
-      <h2>🤝 Let's Connect</h2>
-      <p>I enjoy building, testing, and collaborating. Got a project, a role, or a question? Let’s talk.</p>
+    <section id="contact" class="section container fade-in">
+      <h2>🤝 Let’s Connect</h2>
+      <p>I love connecting with other engineers, creatives, or teams that care about quality and innovation. Drop a message and I’ll get back to you soon.</p>
       <form action="https://formsubmit.co/sharanbingewar09@gmail.com" method="POST">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
@@ -123,7 +144,7 @@
     <!-- FOOTER -->
     <footer id="footer">
       <div class="container">
-        <p>© 2025 Saisharan Bingewar. Let’s build something smart.</p>
+        <p>© 2025 Saisharan Bingewar. Crafted with care & curiosity.</p>
         <div class="social">
           <a href="https://linkedin.com/in/sharanbingewar999" target="_blank"><img src="./assets/linkedin-icon.svg" alt="Linkedin" /></a>
           <a href="https://github.com/sharanbingewar" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
