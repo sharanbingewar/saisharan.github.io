@@ -3,180 +3,161 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saisharan Bingewar - QA Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet" />
+  <title>Saisharan Bingewar | QA Engineer & AI Enthusiast</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: #0f0c29;
       background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-      color: #f1f1f1;
+      color: #f5f5f5;
       scroll-behavior: smooth;
     }
-
     header {
-      padding: 100px 20px 60px;
       text-align: center;
-      background: linear-gradient(135deg, #1e1e2f, #121212);
-      box-shadow: 0 10px 25px rgba(0, 255, 213, 0.2);
+      padding: 100px 20px 40px;
+      background: url('https://transparenttextures.com/patterns/graphy.png');
     }
-
-    h1 {
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
       font-size: 3rem;
       color: #00ffd5;
-      margin-bottom: 0;
+      text-shadow: 1px 1px 4px black;
     }
-
-    h2 {
-      color: #ff4aad;
-      margin-bottom: 10px;
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
     }
-
-    h3 {
+    .social-icons a {
+      margin: 10px;
       color: #00ffd5;
-    }
-
-    .section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      padding: 24px;
-      margin-bottom: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 255, 213, 0.1);
+      font-size: 1.6rem;
       transition: transform 0.3s ease;
     }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 24px rgba(0, 255, 213, 0.25);
+    .social-icons a:hover {
+      transform: scale(1.3);
+      color: #ffea00;
     }
-
-    a {
-      color: #00ffd5;
-      text-decoration: none;
+    section {
+      max-width: 960px;
+      margin: auto;
+      padding: 60px 20px;
+      animation: fadeIn 1.2s ease-out;
     }
-
-    a:hover {
-      text-decoration: underline;
+    h2 {
+      color: #ff4aad;
+      border-bottom: 2px solid #00ffd5;
+      display: inline-block;
+      margin-bottom: 20px;
     }
-
-    ul {
-      padding-left: 1.5rem;
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 255, 213, 0.1);
+      margin-bottom: 30px;
     }
-
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+    }
+    .skill-item {
+      background: #1f1f2e;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .skill-item:hover {
+      box-shadow: 0 0 15px #00ffd5;
+      transform: scale(1.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      background: #2b2b40;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      color: white;
+      margin-bottom: 12px;
+    }
+    button {
+      background: #00ffd5;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #00c2a6;
+    }
     footer {
       text-align: center;
-      padding: 30px 0;
+      padding: 20px;
+      background: #101010;
       font-size: 0.9rem;
-      background-color: #101010;
+      color: #aaa;
     }
-
-    .highlight {
-      color: #00ffd5;
-    }
-
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeIn 1s ease-out forwards;
-    }
-
-    .fade-in:nth-child(even) {
-      animation-delay: 0.2s;
-    }
-
     @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: none;
-      }
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Hi, I'm Saisharan Bingewar</h1>
-    <p class="highlight">QA Engineer | Automation Enthusiast | Bug Hunter</p>
-    <p><a href="mailto:sharanbingewar09@gmail.com">sharanbingewar09@gmail.com</a> • 
-       <a href="https://linkedin.com/in/sharanbingewar999" target="_blank">LinkedIn</a> • 
-       937-900-8676</p>
+    <h1>Saisharan Bingewar</h1>
+    <p>Loves AI • Obsessed with Quality • Creative QA Engineer</p>
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/sharanbingewar999" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/sharanbingewar" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:sharanbingewar09@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
   </header>
 
-  <section class="section fade-in" id="about">
+  <section id="about">
     <h2>About Me</h2>
     <div class="card">
-      <p>I’m a detail-oriented QA Engineer with 3.6 years of hands-on experience testing web apps, APIs, and backend systems. I design and maintain scalable automation frameworks using Selenium, REST-assured, Postman, and Cucumber. I believe testing isn’t just about finding bugs — it’s about preventing them.</p>
+      <p>I’m a QA Engineer who doesn’t just test — I love breaking software to make it better. I’m passionate about AI, and I bring a tester's mindset to every project. Tools I love include Selenium, REST-assured, and Postman. I'm on a mission to blend quality engineering with smart automation — because users deserve software that just works, always.</p>
     </div>
   </section>
 
-  <section class="section fade-in" id="experience">
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>Tata Consultancy Services (Client: Citibank)</h3>
-      <p><em>Sept 2019 – Aug 2022 | Hyderabad, India</em></p>
-      <ul>
-        <li>Built Selenium + Cucumber frameworks for React web apps</li>
-        <li>Automated API testing using REST-assured + Postman</li>
-        <li>Integrated test suites in CI/CD using GitHub and Jenkins</li>
-        <li>Collaborated across QA/UAT/dev teams and drove 80% regression automation</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>QSpiders – Software Testing Associate</h3>
-      <p><em>Jun 2019 – Aug 2019 | Chennai, India</em></p>
-      <ul>
-        <li>Created Selenium test scripts following POM design</li>
-        <li>Executed manual and automated API/UI validations</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Shiash Info Solutions – Assistant System Trainee</h3>
-      <p><em>Jan 2019 – Apr 2019 | Chennai, India</em></p>
-      <ul>
-        <li>Tested web platforms and backend integration flows</li>
-        <li>Validated data flow between API and UI layers</li>
-      </ul>
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item">Java</div>
+      <div class="skill-item">Selenium</div>
+      <div class="skill-item">Postman</div>
+      <div class="skill-item">REST-assured</div>
+      <div class="skill-item">SQL</div>
+      <div class="skill-item">GitHub</div>
+      <div class="skill-item">Jenkins</div>
+      <div class="skill-item">Cucumber</div>
+      <div class="skill-item">JIRA</div>
     </div>
   </section>
 
-  <section class="section fade-in" id="education">
-    <h2>Education</h2>
+  <section id="contact">
+    <h2>Contact Me</h2>
     <div class="card">
-      <h3>Concordia University, Mequon (USA)</h3>
-      <p><em>Master’s in Computer and Information Sciences • GPA: 3.5/4.0</em></p>
-    </div>
-  </section>
-
-  <section class="section fade-in" id="skills">
-    <h2>Technical Skills</h2>
-    <div class="card">
-      <ul>
-        <li><strong>Languages & Tools:</strong> Java, Selenium, REST-assured, Postman, JIRA, SQL</li>
-        <li><strong>Frameworks:</strong> Cucumber (BDD), TestNG, Maven</li>
-        <li><strong>Version Control & CI/CD:</strong> Git, GitHub, Jenkins, Bitbucket</li>
-        <li><strong>Test Types:</strong> Manual, Automation, API, Regression, UI, Black-box</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section fade-in" id="interests">
-    <h2>Interests</h2>
-    <div class="card">
-      <p>When I’m not testing apps, I enjoy tech videos, open-source QA tools, cricket, and building side projects that simplify testing. I’m also an avid chai drinker and automation nerd who loves seeing green pipelines!</p>
+      <form action="https://formsubmit.co/sharanbingewar09@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Email</button>
+      </form>
     </div>
   </section>
 
   <footer>
-    © 2025 Saisharan Bingewar | Made with ❤️ for quality.
+    © 2025 Saisharan Bingewar — Designed with AI passion & QA precision.
   </footer>
-
 </body>
 </html>
