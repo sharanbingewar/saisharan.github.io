@@ -227,3 +227,17 @@ footer img {
     padding: 2rem 1rem;
   }
 }
+
+.profile-image.wave {
+  animation: waveHand 1.5s ease-in-out infinite alternate;
+  transform-origin: 75% 30%; /* tweak if needed */
+}
+
+@keyframes waveHand {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(6deg);
+  }
+}
