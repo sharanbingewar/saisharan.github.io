@@ -1,13 +1,29 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saisharan Bingewar | QA · AI · Frontend</title>
-    <meta name="description" content="Creative QA Engineer with a passion for automation, AI integration, and front-end experiences." />
+    <meta name="description" content="Creative QA Engineer with a passion for automation, AI integration, and frontend experiences." />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous" />
     <style>
+      :root {
+        --bg: #fff;
+        --text: #111;
+        --card: #f5f5f5;
+      }
+      body {
+        background: var(--bg);
+        color: var(--text);
+        transition: all 0.3s ease;
+      }
+      body.dark {
+        --bg: #0e0e0e;
+        --text: #f5f5f5;
+        --card: #1e1e2f;
+      }
       .fade-in {
         opacity: 0;
         transform: translateY(20px);
@@ -20,7 +36,7 @@
         }
       }
       .experience-block {
-        background: rgba(255, 255, 255, 0.05);
+        background: var(--card);
         padding: 24px;
         border-radius: 12px;
         box-shadow: 0 4px 16px rgba(0, 255, 213, 0.1);
@@ -43,6 +59,13 @@
             <li><a class="nav-link" href="#skills">SKILLS</a></li>
             <li><a class="nav-link" href="#contact">REACH OUT</a></li>
             <li><a class="nav-link btn btn-primary" href="assets/Saisharan_QA_Engineer.pdf" target="_blank">RESUME <i class="fas fa-arrow-right"></i></a></li>
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" />
+              </label>
+            </div>
           </ul>
         </div>
       </nav>
@@ -152,6 +175,12 @@
       </div>
     </footer>
 
+    <script>
+      const themeSwitch = document.getElementById("switch");
+      themeSwitch.addEventListener("change", () => {
+        document.body.classList.toggle("dark");
+      });
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>
