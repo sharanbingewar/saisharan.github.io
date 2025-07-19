@@ -156,20 +156,56 @@
   <h2>🤝 Let’s Connect</h2>
   <p>Reach out on LinkedIn instantly, or drop me a message — it’ll land right in my inbox.</p>
 
-  <!-- LinkedIn first -->
   <a href="https://www.linkedin.com/in/sharanbingewar999" target="_blank" class="btn btn-primary" style="margin-bottom: 2rem;">
     Connect on LinkedIn
   </a>
 
-  <!-- Email form -->
-  <form action="https://formsubmit.co/sharanbingewar09@gmail.com" method="POST">
- <input type="hidden" name="_next" value=""https://formsubmit.co/thank-you" />
+  <!-- Contact Form -->
+<form id="contact-form">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="text" name="_honey" style="display:none">
+
   <input type="text" name="name" placeholder="Your Name" required />
   <input type="email" name="email" placeholder="Your Email" required />
   <textarea name="message" rows="5" placeholder="Write me something..." required></textarea>
+
   <button type="submit" class="btn btn-secondary">Send Email</button>
 </form>
+
+
+  <!-- Success Message -->
+  <div id="thank-you" style="display:none; margin-top: 2rem;">
+    <h3>✅ Your message was sent!</h3>
+    <p>I’ll get back to you shortly.</p>
+  </div>
 </section>
+
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    fetch("https://formsubmit.co/ajax/sharanbingewar09@gmail.com", {
+      method: "POST",
+      body: data
+    })
+    .then(response => {
+      if (response.ok) {
+        form.style.display = "none";
+        document.getElementById("thank-you").style.display = "block";
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    })
+    .catch(error => {
+      alert("Failed to send message. Try again later.");
+      console.error("Error:", error);
+    });
+  });
+</script>
+
 
 
     <!-- FOOTER -->
