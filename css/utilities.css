@@ -1,23 +1,22 @@
-/* ?This is where reusable styling of this template will be. 
-   !Will contain things like:
-   * Button styling
-   * Background color styling
-   * padding and margin
-*/
 
+/* Container layout */
 .container {
-  max-width: var(--width-medium);
+  max-width: 960px;
+  
   margin: 0 auto;
   padding: 1rem 2rem;
 }
 
+/* Text selection highlight */
 h1::selection,
 h2::selection {
   color: #111;
-  background: var(--primary-color);
+  background: var(--primary-color, #00ffd5);
 }
 
-/* Buttons */
+/* ===================== */
+/* Button Styling */
+/* ===================== */
 .btn {
   display: inline-block;
   padding: 0.75rem 1.9rem;
@@ -25,25 +24,27 @@ h2::selection {
   text-transform: uppercase;
   font-size: 0.82rem;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .btn-primary {
-  background: var(--primary-color);
+  background: var(--primary-color, #00ffd5);
   color: #000000;
+}
+
+.btn-primary:hover {
+  background: var(--secondary-color, #00e3c4);
 }
 
 .btn-secondary {
   margin: 5px 0;
-  background-color: var(--bg-secondary);
-  color: var(--bg-primary);
+  background-color: var(--bg-secondary, #111);
+  color: var(--bg-primary, #00ffd5);
 }
 
-/* add hover to resume button */
-.btn-primary:hover {
-  background: var(--secondary-color);
-}
-
+/* ===================== */
 /* Dark mode toggle */
+/* ===================== */
 #switch {
   display: none;
 }
@@ -72,13 +73,15 @@ h2::selection {
   transform: rotate(100deg);
 }
 
+/* ===================== */
 /* Header Container */
+/* ===================== */
 .header-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 8rem;
+  margin-top: 4rem;
   padding: 1rem;
 }
 
@@ -102,11 +105,17 @@ h2::selection {
   margin: 0 auto;
   max-width: 700px;
 }
+
+/* ===================== */
+/* Skills Section */
+/* ===================== */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 1rem;
 }
+
+/* Fade-in animation */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -120,10 +129,12 @@ h2::selection {
   }
 }
 
-/* Project cards */
+/* ===================== */
+/* Project Cards */
+/* ===================== */
 .card {
   padding: 1rem;
-  background: var(--card-background);
+  background: var(--card-background, #1e1e2f);
   color: #ffffff;
   border-radius: 5px;
   transition: 0.4s ease-in-out;
@@ -138,7 +149,7 @@ h2::selection {
 }
 
 .card a:hover {
-  color: var(--primary-color);
+  color: var(--primary-color, #00ffd5);
 }
 
 .card:hover {
@@ -149,11 +160,12 @@ h2::selection {
   opacity: 1;
 }
 
-
+/* ===================== */
 /* Media Queries */
+/* ===================== */
 @media (max-width: 768px) {
   .header-container {
-    margin-top: 7rem;
+    margin-top: 3rem;
     text-align: center;
   }
 

@@ -52,7 +52,6 @@
     <header id="hero">
       <nav class="navbar">
         <div class="container">
-          <h1 id="logo"><a href="#"><img src="./assets/logo.png" alt="Logo" /></a></h1>
           <ul class="nav-menu">
             <li><a class="nav-link" href="#projects">PROJECTS</a></li>
             <li><a class="nav-link" href="#experience">EXPERIENCE</a></li>
@@ -80,19 +79,6 @@
       </section>
     </header>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="container section fade-in">
-      <h2>Experience</h2>
-      <div class="experience-block">
-        <h3>Citibank (via Tata Consultancy Services)</h3>
-        <p><em>Sept 2019 – Aug 2022</em></p>
-        <p>
-          As a QA Engineer embedded with Citibank's technology team, I was responsible for ensuring stability across core financial systems. I designed and developed an end-to-end automation framework using Selenium, TestNG, and Cucumber. My API testing expertise led me to create validations for over 100+ REST APIs using Postman and REST-assured.<br><br>
-          Every release I worked on was tightly integrated with CI/CD pipelines like Jenkins and GitHub Actions. I collaborated directly with developers and UAT teams, closing feedback loops faster and enhancing deployment quality. This role not only strengthened my technical base but also grew my love for reliable, smart automation and creative problem solving.
-        </p>
-      </div>
-    </section>
-
     <!-- SKILLS -->
     <section id="skills" class="container section fade-in">
       <h2>Tech Stack & Passions</h2>
@@ -113,6 +99,19 @@
           <h3>💻 Coding</h3>
           <p>Java, Python, GitHub, Shell Scripting, SQL</p>
         </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="container section fade-in">
+      <h2>Experience</h2>
+      <div class="experience-block">
+        <h3>Citibank (via Tata Consultancy Services)</h3>
+        <p><em>Sept 2019 – Aug 2022</em></p>
+        <p>
+          As a QA Engineer embedded with Citibank's technology team, I was responsible for ensuring stability across core financial systems. I designed and developed an end-to-end automation framework using Selenium, TestNG, and Cucumber. My API testing expertise led me to create validations for over 100+ REST APIs using Postman and REST-assured.<br><br>
+          Every release I worked on was tightly integrated with CI/CD pipelines like Jenkins and GitHub Actions. I collaborated directly with developers and UAT teams, closing feedback loops faster and enhancing deployment quality. This role not only strengthened my technical base but also grew my love for reliable, smart automation and creative problem solving.
+        </p>
       </div>
     </section>
 
@@ -152,17 +151,27 @@
       </article>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section container fade-in">
-      <h2>🤝 Let’s Connect</h2>
-      <p>I love connecting with other engineers, creatives, or teams that care about quality and innovation. Drop a message and I’ll get back to you soon.</p>
-      <form action="https://formsubmit.co/sharanbingewar09@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Write me something..." required></textarea>
-        <button type="submit" class="btn btn-secondary">Send Message</button>
-      </form>
-    </section>
+<!-- CONTACT -->
+<section id="contact" class="section container fade-in">
+  <h2>🤝 Let’s Connect</h2>
+  <p>Reach out on LinkedIn instantly, or drop me a message — it’ll land right in my inbox.</p>
+
+  <!-- LinkedIn first -->
+  <a href="https://www.linkedin.com/in/sharanbingewar999" target="_blank" class="btn btn-primary" style="margin-bottom: 2rem;">
+    Connect on LinkedIn
+  </a>
+
+  <!-- Email form -->
+  <form action="https://formsubmit.co/sharanbingewar09@gmail.com" method="POST">
+    <input type="hidden" name="_next" value="https://sharanbingewar.github.io/thankyou.html" />
+
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Write me something..." required></textarea>
+    <button type="submit" class="btn btn-secondary">Send Email</button>
+  </form>
+</section>
+
 
     <!-- FOOTER -->
     <footer id="footer">

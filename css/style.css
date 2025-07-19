@@ -30,12 +30,12 @@ body.dark {
   --card: #1e1e2f;
 }
 
-/* Navbar */
+/* Navbar (logo removed, right-aligned links only) */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.6rem 1.2rem;
   position: sticky;
   top: 0;
   background: var(--bg);
@@ -47,7 +47,9 @@ body.dark {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 1rem;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-link {
@@ -74,7 +76,7 @@ body.dark {
 
 /* Hero Section */
 .header-container {
-  padding: 3rem 2rem;
+  padding: 2.5rem 1.5rem;
   text-align: center;
 }
 
