@@ -1,163 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saisharan Bingewar | QA Engineer & AI Enthusiast</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-      color: #f5f5f5;
-      scroll-behavior: smooth;
-    }
-    header {
-      text-align: center;
-      padding: 100px 20px 40px;
-      background: url('https://transparenttextures.com/patterns/graphy.png');
-    }
-    header h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 3rem;
-      color: #00ffd5;
-      text-shadow: 1px 1px 4px black;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #ccc;
-    }
-    .social-icons a {
-      margin: 10px;
-      color: #00ffd5;
-      font-size: 1.6rem;
-      transition: transform 0.3s ease;
-    }
-    .social-icons a:hover {
-      transform: scale(1.3);
-      color: #ffea00;
-    }
-    section {
-      max-width: 960px;
-      margin: auto;
-      padding: 60px 20px;
-      animation: fadeIn 1.2s ease-out;
-    }
-    h2 {
-      color: #ff4aad;
-      border-bottom: 2px solid #00ffd5;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-    .card {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0, 255, 213, 0.1);
-      margin-bottom: 30px;
-    }
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 20px;
-    }
-    .skill-item {
-      background: #1f1f2e;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-    .skill-item:hover {
-      box-shadow: 0 0 15px #00ffd5;
-      transform: scale(1.1);
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    input, textarea {
-      background: #2b2b40;
-      border: none;
-      padding: 10px;
-      border-radius: 6px;
-      color: white;
-      margin-bottom: 12px;
-    }
-    button {
-      background: #00ffd5;
-      border: none;
-      padding: 10px;
-      border-radius: 6px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #00c2a6;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #101010;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(20px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Saisharan Bingewar</h1>
-    <p>Loves AI • Obsessed with Quality • Creative QA Engineer</p>
-    <div class="social-icons">
-      <a href="https://linkedin.com/in/sharanbingewar999" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/sharanbingewar" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="mailto:sharanbingewar09@gmail.com"><i class="fas fa-envelope"></i></a>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Saisharan Bingewar | QA Engineer & AI Enthusiast</title>
+    <meta name="title" content="Saisharan Bingewar | QA Engineer & AI Enthusiast" />
+    <meta
+      name="description"
+      content="I specialize in test automation, API testing, and blending AI with quality assurance to ensure reliable software delivery."
+    />
 
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="card">
-      <p>I’m a QA Engineer who doesn’t just test — I love breaking software to make it better. I’m passionate about AI, and I bring a tester's mindset to every project. Tools I love include Selenium, REST-assured, and Postman. I'm on a mission to blend quality engineering with smart automation — because users deserve software that just works, always.</p>
-    </div>
-  </section>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://sharanbingewar.github.io"
+    />
+    <meta property="og:title" content="Saisharan Bingewar | QA Engineer & AI Enthusiast" />
+    <meta
+      property="og:description"
+      content="I specialize in test automation, API testing, and blending AI with quality assurance to ensure reliable software delivery."
+    />
+    <meta
+      property="og:image"
+      content="assets/profile-image.svg"
+    />
 
-  <section id="skills">
-    <h2>My Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-item">Java</div>
-      <div class="skill-item">Selenium</div>
-      <div class="skill-item">Postman</div>
-      <div class="skill-item">REST-assured</div>
-      <div class="skill-item">SQL</div>
-      <div class="skill-item">GitHub</div>
-      <div class="skill-item">Jenkins</div>
-      <div class="skill-item">Cucumber</div>
-      <div class="skill-item">JIRA</div>
-    </div>
-  </section>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://sharanbingewar.github.io"
+    />
+    <meta property="twitter:title" content="Saisharan Bingewar | QA Engineer & AI Enthusiast" />
+    <meta
+      property="twitter:description"
+      content="I specialize in test automation, API testing, and blending AI with quality assurance to ensure reliable software delivery."
+    />
+    <meta
+      property="twitter:image"
+      content="assets/profile-image.svg"
+    />
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <div class="card">
-      <form action="https://formsubmit.co/sharanbingewar09@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Email</button>
-      </form>
-    </div>
-  </section>
+    <!-- Icons & Styles -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+  </head>
+  <body>
+    <header id="hero">
+      <nav class="navbar">
+        <div class="container">
+          <h1 id="logo">
+            <a href="#"><img src="./assets/logo.png" alt="Saisharan Logo" /></a>
+          </h1>
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li><a class="nav-link" href="#contact">CONTACT</a></li>
+            <li><a class="nav-link" href="#">BLOG</a></li>
+            <li>
+              <a class="nav-link btn btn-primary" href="assets/Saisharan_QA_Engineer.pdf" target="_blank">
+                RESUME <i class="fas fa-arrow-right"></i>
+              </a>
+            </li>
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" />
+              </label>
+            </div>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
 
-  <footer>
-    © 2025 Saisharan Bingewar — Designed with AI passion & QA precision.
-  </footer>
-</body>
+      <section class="header-container">
+        <img class="profile-image" src="assets/profile-image.svg" alt="Saisharan Bingewar" />
+        <h1>Hi, I'm Saisharan Bingewar</h1>
+        <div class="content-text">
+          <h2>QA Engineer</h2>
+          <h2>Exploring AI + Automation with Purpose</h2>
+          <p>
+            I specialize in building robust test automation frameworks, API testing, and ensuring product quality.
+            Passionate about AI, DevOps, and continuous improvement. My goal? Deliver clean releases and smart testing workflows.
+          </p>
+        </div>
+        <a href="mailto:sharanbingewar09@gmail.com" class="btn btn-secondary" target="_blank">Email Me</a>
+      </section>
+    </header>
+
+    <section id="projects" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Projects</h2>
+        <p>Check out some of the QA and automation projects I’ve worked on:</p>
+      </div>
+      <article class="project">
+        <div class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Web Test Automation Framework</h3>
+              <p>Java, Selenium, TestNG, Jenkins</p>
+            </div>
+            <div class="project-link">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>API Regression Suite</h3>
+              <p>Postman, REST-assured, Newman</p>
+            </div>
+            <div class="project-link">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Performance Load Testing</h3>
+              <p>JMeter, BlazeMeter</p>
+            </div>
+            <div class="project-link">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <a href="mailto:sharanbingewar09@gmail.com">sharanbingewar09@gmail.com</a>
+        <div class="social">
+          <a href="https://linkedin.com/in/sharanbingewar999" target="_blank"><img src="./assets/linkedin-icon.svg" alt="Linkedin" /></a>
+          <a href="https://github.com/sharanbingewar" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+        </div>
+        <p>© 2025 Saisharan Bingewar. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
