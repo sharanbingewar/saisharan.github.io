@@ -11,15 +11,35 @@
 </head>
 
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar">
+
+ <!-- NAVBAR -->
+<nav class="navbar">
   <div class="container nav-flex">
+
+    <!-- LEFT: Avatar -->
     <div class="nav-left">
       <img id="avatar-img" src="assets/avatars/avatar-default.png" alt="Saisharan Avatar" />
     </div>
-    <div class="nav-right">
-      <div class="hamburger">☰</div>
 
+    <!-- CENTER: Nav Links (includes RESUME now) -->
+    <ul class="nav-menu">
+      <li><a class="nav-link" href="#about">ABOUT</a></li>
+      <li><a class="nav-link" href="#education">EDUCATION</a></li>
+      <li><a class="nav-link" href="#skills">SKILLS</a></li>
+      <li><a class="nav-link" href="#experience">EXPERIENCE</a></li>
+      <li><a class="nav-link" href="#projects">PROJECTS</a></li>
+      <li><a class="nav-link" href="#contact">REACH OUT</a></li>
+
+      <!-- RESUME inside nav-menu for mobile -->
+      <li class="mobile-resume">
+        <a class="nav-link btn btn-primary" href="assets/Saisharan_QA_Engineer.pdf" target="_blank">
+          RESUME <i class="fas fa-arrow-right"></i>
+        </a>
+      </li>
+    </ul>
+
+    <!-- RIGHT: Theme Toggle + Hamburger -->
+    <div class="nav-right">
       <div class="theme-switch">
         <input type="checkbox" id="switch" />
         <label class="toggle-icons" for="switch">
@@ -27,18 +47,12 @@
           <img class="sun" src="assets/sun.svg" />
         </label>
       </div>
-    </div>
-  </div>
 
-  <ul class="nav-menu">
-    <li><a class="nav-link" href="#about">ABOUT</a></li>
-    <li><a class="nav-link" href="#education">EDUCATION</a></li>
-    <li><a class="nav-link" href="#skills">SKILLS</a></li>
-    <li><a class="nav-link" href="#experience">EXPERIENCE</a></li>
-    <li><a class="nav-link" href="#projects">PROJECTS</a></li>
-    <li><a class="nav-link" href="#contact">REACH OUT</a></li>
-    <li><a class="nav-link btn btn-primary" href="assets/Saisharan_QA_Engineer.pdf" target="_blank">RESUME <i class="fas fa-arrow-right"></i></a></li>
-  </ul>
+      <!-- Hamburger -->
+      <div class="hamburger">☰</div>
+    </div>
+
+  </div>
 </nav>
 
 
@@ -48,7 +62,12 @@
     <h1>Hello, I'm Saisharan Bingewar</h1>
     <div class="content-text">
       <h2>QA Engineer · AI Explorer · UI Enthusiast</h2>
-      <p>I transform test cases into user confidence. I explore AI to rethink automation, and love crafting experiences with quality-first thinking.</p>
+<p>
+  The user is never wrong. That’s why I break software on purpose.<br />
+  I automate what no one wants to do twice, use AI like a teammate, and design UIs that don't need explanations.<br />
+  If it feels easy, that means I did the hard part right.
+</p>
+
     </div>
     <a href="#contact" class="btn btn-secondary">Let’s Collaborate</a>
   </header>
@@ -58,13 +77,12 @@
     <h2>About Me</h2>
     <div class="text-block">
       <p>
-        Hi, I'm <strong>Saisharan Bingewar</strong> — a QA Engineer with a sharp eye for quality and a growing love for all things AI.
-        I enjoy designing clean, scalable test strategies that align with business needs, exploring modern automation, and collaborating with developers to deliver faster and smarter.
-      </p>
-      <p>
-        Outside work, I explore prompt engineering, learn frontend design for fun, and contribute ideas that improve software reliability.
-        This portfolio reflects that blend of curiosity, quality, and creativity.
-      </p>
+  I’m Saisharan — Masters in computer and information sciences and a lazy-smart QA engineer who’d rather write a script than repeat a step.<br />
+  I automate what slows teams down, explore AI with hands-on curiosity, and obsess over UIs that actually make sense.<br />
+  When I’m not breaking software on purpose, you’ll find me chasing peaks, exploring trails, or wandering new cities with a backpack and a podcast.<br />
+  I believe quality isn’t a task — it’s a mindset. Whether I’m debugging in VS Code or lost in the mountains, I’m always looking for smarter ways to move forward.
+</p>
+  
     </div>
   </section>
 
@@ -74,9 +92,25 @@
     <div class="edu-item">
       <h3>🎓 Concordia University Wisconsin</h3>
       <p><strong>Master’s in Computer and Information Science</strong></p>
-      <p><em>GPA: 3.84 / 4.0</em></p>
-      <p>Focused on real-world testing strategies, software quality, AI in automation, and data-driven engineering practices.</p>
-    </div>
+      <p><em>GPA: 3.5 / 4.0</em></p>
+  <p>
+    These courses taught me how to think like a machine, build like an engineer, and design like a human.
+  </p>
+
+  <p><strong>Relevant Coursework:</strong></p>
+  <ul class="coursework-list">
+    <li>Vocation and Ethical Computing</li>
+    <li>Applied Artificial Intelligence</li>
+    <li>User Experience</li>
+    <li>Data Security and Information Assurance</li>
+    <li>Applied Computer Networking</li>
+    <li>Mobile Computer Architecture</li>
+    <li>Advanced Database Administration</li>
+    <li>Advanced Algorithms</li>
+    <li>Language Theory</li>
+    <li>Applied RESTful APIs and Integrations</li>
+  </ul>
+</div>
   </section>
 
   <!-- SKILLS -->
@@ -90,20 +124,44 @@
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="container section fade-in">
-    <h2>Experience</h2>
-    <div class="experience-block">
-      <h3>Citibank (via Tata Consultancy Services)</h3>
-      <p><em>Sept 2019 – Aug 2022</em></p>
-      <p>
-        As a QA Engineer embedded with Citibank's technology team, I was responsible for ensuring stability across core financial systems.
-        I designed and developed an end-to-end automation framework using Selenium, TestNG, and Cucumber. My API testing expertise led me to create validations for over 100+ REST APIs using Postman and REST-assured.<br><br>
-        Every release I worked on was tightly integrated with CI/CD pipelines like Jenkins and GitHub Actions. I collaborated directly with developers and UAT teams, closing feedback loops faster and enhancing deployment quality.
-        This role not only strengthened my technical base but also grew my love for reliable, smart automation and creative problem solving.
-      </p>
-    </div>
-  </section>
+<!-- EXPERIENCE -->
+<section id="experience" class="container section fade-in">
+  <h2>Experience</h2>
+
+  <!-- TCS + Citibank -->
+  <div class="experience-block">
+    <h3>Tata Consultancy Services (for Citibank)</h3>
+    <p>
+      My journey with TCS began with a quiet curiosity for testing — but it quickly evolved into something much more hands-on, technical, and impactful.<br /><br />
+
+      Within weeks, I was contributing to Citibank’s internal engineering workflows, surrounded by production-grade systems and high-stakes release cycles. The environment demanded precision, consistency, and the kind of ownership that goes beyond just executing test cases.<br /><br />
+
+      I focused on designing test frameworks that scaled, not just worked. Using Selenium, Cucumber, and TestNG, I streamlined regression processes to catch failures early — before users ever noticed them. On the backend, I crafted REST-assured suites to validate hundreds of APIs, ensuring stability across service integrations, authentication layers, and data flows.<br /><br />
+
+      What started as test automation became a deeper practice in engineering quality: contributing to CI/CD pipelines, aligning with sprint cycles, writing SQL for test data accuracy, and collaborating directly with developers, analysts, and UAT teams to push each build closer to confidence. Documentation, test architecture, defect traceability — everything mattered. And I made sure it was done right.<br /><br />
+
+      Those three years taught me that good QA isn't just about testing. It's about building systems users can trust — and being the first person who tries to break them before they do.
+    </p>
+  </div>
+
+  <!-- QSpiders -->
+  <div class="experience-block">
+    <h3>QSpiders, Chennai</h3>
+    <p>
+      Before the real-world systems came in, this was my training ground. I spent time refining automation principles, learning Selenium through repetition, and debugging test failures until they made sense.<br /><br />
+      The focus was on consistency, logic, and getting comfortable with structured testing in live environments — a foundation I still carry forward.
+    </p>
+  </div>
+
+  <!-- Shiash Info Solutions -->
+  <div class="experience-block">
+    <h3>Shiash Info Solutions, Chennai</h3>
+    <p>
+      My first encounter with a working product. At Shiash, I observed how software really behaves under test — how APIs connect to interfaces, how small bugs create ripple effects, and why functional coverage matters.<br /><br />
+      It was less about tools, more about instincts. And it sparked my need to understand systems from the inside out.
+    </p>
+  </div>
+</section>
 
   <!-- PROJECTS -->
   <section id="projects" class="project-container container fade-in">
