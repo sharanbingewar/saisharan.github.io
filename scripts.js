@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("form[action*='formspree']");
   const thankYou = document.getElementById("thank-you");
-  const backBtn = document.getElementById("back-to-form");
 
   if (form && thankYou) {
     form.addEventListener("submit", function (e) {
@@ -16,30 +15,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }).then((response) => {
         if (response.ok) {
-          // ✅ Email sent
           form.reset();
           form.style.display = "none";
           thankYou.style.display = "block";
         } else {
-          alert("Something went wrong. Please try again.");
+          alert("Something went wrong. Please try again later.");
         }
-      }).catch(() => {
-        alert("Failed to send message. Try again later.");
+          form.reset();                        // Clear all inputs
+  thankYou.style.display = "none";    // Hide success message
+  form.style.display = "block";       // Show form again
+
+  window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top (or adjust)
       });
     });
   }
-
-  // ✅ "Go Back" button resets view
-  if (backBtn) {
-    backBtn.addEventListener("click", function () {
-      thankYou.style.display = "none";
-      form.style.display = "block";
-      form.reset();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  }
 });
-
 
 
   // ✅ Avatar Scroll Logic
@@ -79,4 +69,4 @@ document.addEventListener("DOMContentLoaded", function () {
     const el = document.getElementById(id);
     if (el) observer.observe(el);
   });
-});
+

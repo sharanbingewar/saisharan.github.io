@@ -143,19 +143,18 @@
     <p>Reach out on LinkedIn instantly, or drop me a message — it’ll land right in my inbox.</p>
     <a href="https://www.linkedin.com/in/sharanbingewar999" target="_blank" class="btn btn-primary" style="margin-bottom: 2rem;">Connect on LinkedIn</a>
 
-  <form action="https://formspree.io/f/xjkoggry" method="POST">
-  <input type="hidden" name="_subject" value="New message from Your website!" />
-  <input type="hidden" name="_captcha" value="false" />
-  <input type="text" name="name" placeholder="Your Name" required />
-  <input type="email" name="email" placeholder="Your Email" required />
-  <textarea name="message" rows="5" placeholder="Write me something..." required></textarea>
-  <button type="submit" class="btn btn-secondary">Send Message</button>
-</form>
+    <form id="contact-form">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Write me something..." required></textarea>
+      <button type="submit" class="btn btn-secondary">Send Email</button>
+    </form>
 
     <div id="thank-you" style="display:none; margin-top: 2rem;">
       <h3>✅ Your message was sent!</h3>
       <p>I’ll get back to you shortly.</p>
-      <button id="back-to-form" class="btn btn-primary" style="margin-top: 1rem;">Go Back</button>
     </div>
   </section>
 
@@ -201,6 +200,7 @@
       });
     });
 
+    // Avatar image scroll swap
     const avatar = document.getElementById("avatar-img");
     const sectionMap = {
       projects: "avatar-smile.png",
