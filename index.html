@@ -13,30 +13,34 @@
 <body>
   <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="container nav-flex">
-      <div class="nav-left">
-        <img id="avatar-img" src="assets/avatars/avatar-default.png" alt="Saisharan Avatar" />
-      </div>
-      <div class="nav-right">
-        <ul class="nav-menu">
-          <li><a class="nav-link" href="#about">ABOUT</a></li>
-          <li><a class="nav-link" href="#education">EDUCATION</a></li>
-          <li><a class="nav-link" href="#skills">SKILLS</a></li>
-          <li><a class="nav-link" href="#experience">EXPERIENCE</a></li>
-          <li><a class="nav-link" href="#projects">PROJECTS</a></li>
-          <li><a class="nav-link" href="#contact">REACH OUT</a></li>
-          <li><a class="nav-link btn btn-primary" href="assets/Saisharan_QA_Engineer.pdf" target="_blank">RESUME <i class="fas fa-arrow-right"></i></a></li>
-        </ul>
-        <div class="theme-switch">
-          <input type="checkbox" id="switch" />
-          <label class="toggle-icons" for="switch">
-            <img class="moon" src="assets/moon.svg" />
-            <img class="sun" src="assets/sun.svg" />
-          </label>
-        </div>
+  <div class="container nav-flex">
+    <div class="nav-left">
+      <img id="avatar-img" src="assets/avatars/avatar-default.png" alt="Saisharan Avatar" />
+    </div>
+    <div class="nav-right">
+      <div class="hamburger">☰</div>
+
+      <div class="theme-switch">
+        <input type="checkbox" id="switch" />
+        <label class="toggle-icons" for="switch">
+          <img class="moon" src="assets/moon.svg" />
+          <img class="sun" src="assets/sun.svg" />
+        </label>
       </div>
     </div>
-  </nav>
+  </div>
+
+  <ul class="nav-menu">
+    <li><a class="nav-link" href="#about">ABOUT</a></li>
+    <li><a class="nav-link" href="#education">EDUCATION</a></li>
+    <li><a class="nav-link" href="#skills">SKILLS</a></li>
+    <li><a class="nav-link" href="#experience">EXPERIENCE</a></li>
+    <li><a class="nav-link" href="#projects">PROJECTS</a></li>
+    <li><a class="nav-link" href="#contact">REACH OUT</a></li>
+    <li><a class="nav-link btn btn-primary" href="assets/Saisharan_QA_Engineer.pdf" target="_blank">RESUME <i class="fas fa-arrow-right"></i></a></li>
+  </ul>
+</nav>
+
 
   <!-- HERO -->
   <header class="header-container">
@@ -223,5 +227,6 @@
       if (section) observer.observe(section);
     });
   </script>
+<script src="scripts.js"></script>
 </body>
 </html>
