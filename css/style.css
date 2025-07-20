@@ -1,4 +1,4 @@
-/* Base reset */
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
@@ -30,17 +30,40 @@ body.dark {
   --card: #1e1e2f;
 }
 
-/* Navbar (logo removed, right-aligned links only) */
+/* Navbar */
 .navbar {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0.6rem 1.2rem;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  height: 64px;
+  display: flex;
+  align-items: center;
   background: var(--bg);
-  z-index: 100;
-  border-bottom: 1px solid #e1e4e8;
+  padding: 0 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-left img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .nav-menu {
@@ -62,8 +85,13 @@ body.dark {
   color: #00ffd5;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .theme-switch {
-  margin-left: 1rem;
   display: flex;
   align-items: center;
 }
@@ -76,8 +104,10 @@ body.dark {
 
 /* Hero Section */
 .header-container {
-  padding: 2.5rem 1.5rem;
+  margin-top: 0;
+  padding: 140px 1rem 3rem;
   text-align: center;
+  overflow: visible;
 }
 
 .profile-image {
@@ -85,7 +115,19 @@ body.dark {
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
+  display: block;
+  box-shadow: 0 0 0 4px #00ffd5;
+}
+
+.profile-image.wave {
+  animation: waveHand 1.5s ease-in-out infinite alternate;
+  transform-origin: 75% 30%;
+}
+
+@keyframes waveHand {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(6deg); }
 }
 
 /* Buttons */
@@ -125,6 +167,7 @@ body.dark {
   padding: 3rem 2rem;
   max-width: 960px;
   margin: auto;
+  scroll-margin-top: 80px;
 }
 
 h2 {
@@ -202,7 +245,7 @@ footer img {
   margin: 0 8px;
 }
 
-/* Animation */
+/* Animations */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -218,6 +261,11 @@ footer img {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .nav-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .nav-menu {
     flex-direction: column;
     gap: 0.5rem;
@@ -226,18 +274,10 @@ footer img {
   .header-container {
     padding: 2rem 1rem;
   }
-}
 
-.profile-image.wave {
-  animation: waveHand 1.5s ease-in-out infinite alternate;
-  transform-origin: 75% 30%; /* tweak if needed */
-}
-
-@keyframes waveHand {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(6deg);
+  .nav-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 }
